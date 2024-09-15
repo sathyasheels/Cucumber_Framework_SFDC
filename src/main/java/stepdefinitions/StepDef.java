@@ -12,7 +12,7 @@ import pages.LoginPageCF;
 import utils.FileUtils;
 
 
-public class LoginPageStepDef {
+public class StepDef {
 	LoginPageCF lp=null;
 	
 	@Given("user is in login page")

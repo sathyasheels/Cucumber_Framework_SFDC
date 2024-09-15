@@ -36,7 +36,7 @@ public class LoginPageCF extends BasePageCF {
 	@FindBy(xpath="//input[@id='un']")
 	public WebElement forgotUsernameTextbox;
 	
-	@FindBy(xpath="//span[@class='helpLink']")
+	@FindBy(xpath="//a[@title='Home Tab']")
 	public WebElement landingPage;
 	
 	public boolean verifyLoginSuccessful(String name,String pwd) {
@@ -63,6 +63,12 @@ public class LoginPageCF extends BasePageCF {
 	
 	public boolean verifyLoginsuccessful1() {
 		boolean isLoginSuccessful=false;
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if(landingPage.isDisplayed()) {
 			isLoginSuccessful=true;
 		}
