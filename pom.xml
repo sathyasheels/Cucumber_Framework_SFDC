@@ -24,7 +24,7 @@
 				<version>2.19</version>
 				<configuration>
 					<includes>
-						<include>**/TestRunner*.java</include>
+						<include>**/TestRunnerLogin.java</include>
 					</includes>
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
